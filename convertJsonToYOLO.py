@@ -9,8 +9,6 @@ from PIL import Image
 from utils import *
 
 
-
-
 def convert_coco_json(json_dir="../coco/annotations/", use_segments=False, cls91to80=False):
     """Converts COCO JSON format to YOLO label format, with options for segments and class mapping."""
     save_dir = make_dirs()  # output directory
