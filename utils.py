@@ -16,7 +16,6 @@ for orientation in ExifTags.TAGS.keys():
     if ExifTags.TAGS[orientation] == "Orientation":
         break
 
-
 def exif_size(img):
     """Returns the EXIF-corrected PIL image size as a tuple (width, height)."""
     s = img.size  # (width, height)
