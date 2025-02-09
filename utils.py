@@ -15,7 +15,6 @@ vid_formats = ["mov", "avi", "mp4", "mpg", "mpeg", "m4v", "wmv", "mkv"]  # accep
 for orientation in ExifTags.TAGS.keys():
     if ExifTags.TAGS[orientation] == "Orientation":
         break
-
 def exif_size(img):
     """Returns the EXIF-corrected PIL image size as a tuple (width, height)."""
     s = img.size  # (width, height)
