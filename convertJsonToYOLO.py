@@ -11,7 +11,6 @@ def convert_coco_json(json_dir="../coco/annotations/", use_segments=False, cls91
     """Converts COCO JSON format to YOLO label format, with options for segments and class mapping."""
     save_dir = make_dirs()  # output directory
     coco80 = coco91_to_coco80_class()
-
     # Import json
     for json_file in sorted(Path(json_dir).resolve().glob("*.json")):
         fn = Path(save_dir) / "labels" / json_file.stem.replace("instances_", "")  # folder name
