@@ -65,6 +65,7 @@ def convert_coco_json(json_dir="../coco/annotations/", use_segments=False, cls91
                     line = (*(segments[i] if use_segments else bboxes[i]),)  # cls, box or segments
                     file.write(("%g " * len(line)).rstrip() % line + "\n")
 
+
 def min_index(arr1, arr2):
     """
     Find a pair of indexes with the shortest distance.
