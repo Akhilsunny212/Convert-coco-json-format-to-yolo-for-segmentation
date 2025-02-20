@@ -79,6 +79,7 @@ def min_index(arr1, arr2):
     dis = ((arr1[:, None, :] - arr2[None, :, :]) ** 2).sum(-1)
     return np.unravel_index(np.argmin(dis, axis=None), dis.shape)
 
+
 def merge_multi_segment(segments):
     """
     Merge multi segments to one list. Find the coordinates with min distance between each segment, then connect these
